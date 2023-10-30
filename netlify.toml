@@ -2,7 +2,8 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 [build]
-  publish = "public"
+  publish = "src"
   command = "npm run build"
