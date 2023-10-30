@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./Search.module.scss";
 import classNames from "classnames";
 import { useCallback, useEffect, useRef, useState } from "react";

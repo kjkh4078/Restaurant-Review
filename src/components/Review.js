@@ -1,3 +1,4 @@
+import React from 'react';
 import classNames from "classnames";
 import { deleteDoc, doc } from "firebase/firestore";
 import { deleteObject, ref } from "firebase/storage";

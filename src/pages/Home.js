@@ -1,3 +1,4 @@
+import React from 'react';
 import Map from "../components/Map";
 import styles from "./Home.module.scss";
 import Search from "../components/Search";
