@@ -95,7 +95,7 @@ const FindReview: React.FC<FindReviewPropType> = ({
         </div>
       </ul>
       <footer className={styles.footer}>
-        &copy; {new Date().getFullYear()}. RAREBEEF All Rights Reserved.
+        &copy; {new Date().getFullYear()}. Capstone2023 All Rights Reserved.
       </footer>
     </div>
   );
