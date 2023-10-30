@@ -8,7 +8,7 @@ const Nav: React.FC<NavPropType> = (): ReactElement => {
     <ul className={styles.container}>
       <h1 className={classNames(styles.logo, styles.item)}>
         <NavLink to="/">
-          <span className={styles["logo__place"]}>Place</span>{" "}
+          <span className={styles["logo__Restaurant"]}>Restaurant</span>{" "}
           <span className={styles["logo__review"]}>Review</span>
         </NavLink>
       </h1>
