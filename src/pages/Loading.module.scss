@@ -1,0 +1,26 @@
+.container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
+  width: 100%;
+  .loading {
+    transform-origin: center;
+    animation: loading linear 5s infinite;
+    @keyframes loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    font-size: 100px;
+    font-weight: 900;
+    padding-top: 10px;
+  }
+}
