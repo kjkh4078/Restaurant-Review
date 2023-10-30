@@ -1,0 +1,71 @@
+.container {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  min-width: 300px;
+  z-index: 999;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #403d39;
+}
+.container .selected,
+.container .deselect,
+.container .logo {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  width: 130px;
+  height: 60px;
+  text-align: center;
+}
+.container .selected:not(.logo),
+.container .deselect:not(.logo),
+.container .logo:not(.logo) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .selected:hover:not(.logo),
+.container .deselect:hover:not(.logo),
+.container .logo:hover:not(.logo) {
+  background-color: rgb(73, 73, 73);
+}
+.container .selected.selected > li,
+.container .deselect.selected > li,
+.container .logo.selected > li {
+  color: #eb5e28;
+}
+.container .selected.logo,
+.container .deselect.logo,
+.container .logo.logo {
+  margin-left: 20px;
+  min-width: 160px;
+  line-height: 60px;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 25px;
+}
+.container .selected.logo .logo__review,
+.container .deselect.logo .logo__review,
+.container .logo.logo .logo__review {
+  color: #eb5e28;
+}
+
+@media screen and (max-width: 400px) {
+  .container .selected,
+  .container .deselect,
+  .container .logo {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    width: auto !important;
+    min-width: none !important;
+  }
+  .container .selected:nth-child(2), .container .selected:nth-child(3),
+  .container .deselect:nth-child(2),
+  .container .deselect:nth-child(3),
+  .container .logo:nth-child(2),
+  .container .logo:nth-child(3) {
+    display: none;
+  }
+}

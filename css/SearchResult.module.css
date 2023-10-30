@@ -1,0 +1,56 @@
+.item {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.item:nth-child(2n) {
+  background-color: #2e2c2a;
+}
+.item:first-child {
+  margin-top: 0;
+}
+.item .item__header {
+  margin-bottom: 5px;
+}
+.item .item__header .header__place-name {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.item .item__header .header__category {
+  font-size: 12px;
+  color: #ccc5b9;
+}
+.item .item__address {
+  font-size: 14px;
+  color: #ccc5b9;
+}
+.item .item__road-address {
+  margin-top: 3px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #ccc5b9;
+}
+.item.selected {
+  background-color: #fffcf2;
+}
+.item.selected .item__header .header__place-name {
+  font-weight: 700;
+  color: #252422;
+}
+.item.selected .item__header .header__category {
+  color: #403d39;
+}
+.item.selected .item__address,
+.item.selected .item__road-address {
+  color: #403d39;
+}
+.item:hover:not(.selected) {
+  background-color: #474542;
+}

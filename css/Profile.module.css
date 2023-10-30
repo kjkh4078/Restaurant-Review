@@ -1,0 +1,105 @@
+@media screen and (max-width: 400px) {
+  .container .alert {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .container .input {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+.container {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  max-width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .edit-profile-wrapper {
+  padding-top: 80px;
+}
+.container .edit-profile-wrapper .edit-profile-header {
+  text-align: center;
+  font-size: 25px;
+}
+.container .edit-profile-wrapper .form-header {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+.container .edit-profile-wrapper .alert {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 14px;
+  color: #ccc5b9;
+}
+.container .edit-profile-wrapper .input {
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  background-color: #595754;
+  color: #252422;
+  outline: none;
+  border: 1px solid #ccc5b9;
+  border-radius: 5px;
+  height: 30px;
+}
+.container .edit-profile-wrapper .display-name-wrapper {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container .edit-profile-wrapper .password-wrapper {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.container .edit-profile-wrapper .btn-wrapper {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container .zero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container .line {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0px;
+  height: 1px;
+  background-color: #ccc5b9;
+}
+.container .my-review-wrapper {
+  padding-top: 40px;
+  width: 70vw;
+  min-width: 300px;
+}
+.container .my-review-wrapper .my-review-header {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+.container .footer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #ccc5b9;
+  font-size: 14px;
+}

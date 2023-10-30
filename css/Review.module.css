@@ -1,0 +1,104 @@
+.review {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  transition: all 0.3s;
+  max-width: inherit;
+  min-width: 250px;
+}
+.review.edit-mod.profile-page {
+  background-color: #fffcf2;
+}
+.review:not(.profile-page, .edit-mod) {
+  cursor: pointer;
+}
+.review:nth-child(2n) {
+  background-color: #2e2c2a;
+}
+.review .review__header {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.review .review__header .header__title {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.review .review__header .header__rating {
+  white-space: nowrap;
+  line-height: 20px;
+}
+.review .review__address .address__address {
+  font-size: 13px;
+  color: #ccc5b9;
+}
+.review .review__address .address__road-address {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #ccc5b9;
+}
+.review .line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0px;
+  height: 1px;
+  background-color: #403d39;
+}
+.review .review__content {
+  display: flex;
+  flex-direction: column;
+}
+.review .review__content .review__memo {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 20px;
+  height: fit-content;
+}
+.review .review__content .review__photo {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 300px;
+}
+.review .review__footer {
+  padding-bottom: 20px;
+}
+.review .review__footer .footer__date,
+.review .review__footer .footer__author {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #ccc5b9;
+}
+.review.selected {
+  background-color: #fffcf2;
+}
+.review.selected .review__header .header__title {
+  color: #252422;
+}
+.review.selected .line {
+  background-color: #ccc5b9;
+}
+.review.selected .address__address,
+.review.selected .address__road-address,
+.review.selected .review__memo {
+  color: #403d39;
+}
+.review.selected .review__footer .footer__date,
+.review.selected .review__footer .footer__author {
+  color: #403d39;
+}
+.review .creator-btn-wrapper {
+  margin-top: 10px;
+}
+.review:hover:not(.selected, .profile-page) {
+  background-color: #474542;
+}

@@ -1,0 +1,150 @@
+@media screen and (max-width: 1000px) {
+  .container {
+    height: auto !important;
+  }
+  .container .form {
+    min-height: 400px;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  height: calc(100vh - 200px);
+  width: 100%;
+  min-height: 360px;
+}
+.container:not(.edit-mod) .form {
+  background-color: #fffcf2;
+}
+.container .form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 20px;
+  height: 70%;
+}
+.container .form .header-wrapper {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .form .header-wrapper .label {
+  margin: 0;
+}
+.container .form .header-wrapper .counter {
+  color: #252422;
+}
+.container .form .header-wrapper .counter.over {
+  color: #eb5e28;
+}
+.container .form .label {
+  color: #252422;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+.container .form .input--store-name {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 10px;
+  background-color: #fffcf2;
+  color: #252422;
+  outline: none;
+  border: 1px solid #ccc5b9;
+  border-radius: 5px;
+  height: 30px;
+}
+.container .form .middle-wrapper {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+}
+.container .form .middle-wrapper .rating-wrapper {
+  display: flex;
+  align-items: center;
+}
+.container .form .middle-wrapper .rating-wrapper .label {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.container .form .middle-wrapper .rating-wrapper .rating {
+  margin-left: 5px;
+}
+.container .form .middle-wrapper .attachment-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+.container .form .middle-wrapper .attachment-wrapper .input--file {
+  margin-right: 15px;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: #252422;
+  border: 1px solid #ccc5b9;
+  border-radius: 5px;
+  color: #fffcf2;
+  font-size: 14px;
+  width: 70px;
+  height: 24px;
+  line-height: 18px;
+  text-align: center;
+}
+.container .form .middle-wrapper .attachment-wrapper .input--file:hover {
+  background-color: rgb(73, 73, 73);
+}
+.container .form .input--memo {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fffcf2;
+  color: #252422;
+  resize: none;
+  flex-grow: 1;
+  outline: none;
+  border: 1px solid #ccc5b9;
+  border-radius: 5px;
+}
+.container .form .btn-wrapper {
+  text-align: right;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.container .footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #ccc5b9;
+  font-size: 14px;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+.container.edit-mod {
+  height: auto;
+}
+.container.edit-mod .form {
+  margin: 0;
+  min-height: 400px;
+}
+.container.edit-mod .form .header-wrapper {
+  margin-top: 0;
+}
+.container.edit-mod .form .middle-wrapper {
+  margin-bottom: 25px;
+}
