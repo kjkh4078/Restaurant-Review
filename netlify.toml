@@ -3,7 +3,3 @@
   to = "/index.html"
   status = 200
   force = false
-
-[build]
-  publish = "src"
-  command = "npm run build"
